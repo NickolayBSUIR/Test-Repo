@@ -1,0 +1,35 @@
+PATH
+  remote: C:/MyOwnWrongEmpire/lib/gems/mihoyo-web-api-ruby
+  specs:
+    mihoyo (0.0.0)
+      digest
+      httparty
+      httplog
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    digest (3.1.1)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    httplog (1.6.2)
+      rack (>= 2.0)
+      rainbow (>= 2.0.0)
+    mini_mime (1.1.5)
+    multi_xml (0.6.0)
+    nokogiri (1.15.5-x64-mingw-ucrt)
+      racc (~> 1.4)
+    racc (1.7.3)
+    rack (3.0.8)
+    rainbow (3.1.1)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  mihoyo!
+  nokogiri
+
+BUNDLED WITH
+   2.4.13
