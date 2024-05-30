@@ -1,14 +1,14 @@
 require '../../multiple_downloader.rb'
 require 'nokogiri'
 require 'optparse'
-require 'open-uri'
+require 'httparty'
 require 'cgi'
 require 'benchmark'
 
 base = 'https://pdd.auto-cargo.com/'
 
 puts Benchmark.measure{
-  doc = Nokogiri::HTML(URI.open(base + 'plan-konspekt.html'))
+  doc = Nokogiri::HTML(Httparty.get(base + 'plan-konspekt.html'))
 
   `md "./page"`
 
